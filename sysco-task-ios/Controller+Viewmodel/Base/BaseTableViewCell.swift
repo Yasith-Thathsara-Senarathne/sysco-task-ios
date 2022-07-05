@@ -17,7 +17,9 @@ open class BaseTableViewCell: UITableViewCell {
     
     private func doLoadThings(){
         config()
+        
         createViews()
+        
         insertAndLayoutSubviews()
     }
     
@@ -26,6 +28,7 @@ open class BaseTableViewCell: UITableViewCell {
         
         doLoadThings()
     }
+    
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         

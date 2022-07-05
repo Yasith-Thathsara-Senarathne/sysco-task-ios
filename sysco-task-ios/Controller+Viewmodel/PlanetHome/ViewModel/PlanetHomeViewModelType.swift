@@ -11,5 +11,9 @@ import RxSwift
 protocol PlanetHomeViewModelType {
     var planetListModel: Observable<[PlanetModel]> { get }
     
+    var mainLoading: Observable<Bool> { get }
+    
+    var backgroundLoading: Observable<Bool> { get }
+    
     func fetchPlanets()
 }

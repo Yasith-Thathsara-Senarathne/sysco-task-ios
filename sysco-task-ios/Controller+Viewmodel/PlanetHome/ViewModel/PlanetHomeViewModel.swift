@@ -10,6 +10,7 @@ import RxSwift
 import Moya
 
 struct PlanetHomeViewModel: PlanetHomeViewModelType {
+    // API provider
     private let apiProvider = MoyaProvider<APIRoute>()
     
     // planet result model subject
@@ -19,21 +20,29 @@ struct PlanetHomeViewModel: PlanetHomeViewModelType {
         planetListModelSubject.asObservable()
     }
     
-    // loading subject
-    private let loadingSubject = PublishSubject<Bool>.init()
+    // main loading subject
+    private let mainLoadingSubject = PublishSubject<Bool>.init()
     
-    var loading: Observable<Bool> {
-        loadingSubject.asObservable()
+    var mainLoading: Observable<Bool> {
+        mainLoadingSubject.asObservable()
     }
     
+    // background loading subject
+    private let backgroundLoadingSubject = PublishSubject<Bool>.init()
+    
+    var backgroundLoading: Observable<Bool> {
+        backgroundLoadingSubject.asObservable()
+    }
+    
+    // fetch planets from server
     func fetchPlanets() {
-        loadingSubject.onNext(true)
+        mainLoadingSubject.onNext(true)
         
         _ = apiProvider.rx.request(.fetchPlanets(page: 1))
             .map(PlanetResultModel.self)
             .asObservable()
             .do(onDispose: {
-                loadingSubject.onNext(false)
+                mainLoadingSubject.onNext(false)
             })
             .catchAndReturn(PlanetResultModel(count: 0, next: "", previous: "", results: []))
             .subscribe(onNext: {

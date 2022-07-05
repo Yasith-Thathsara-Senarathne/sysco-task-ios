@@ -11,7 +11,7 @@
 		5F499A9E4A7CD58432DF32BD /* Pods_sysco_task_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23741C984B923655A20B088 /* Pods_sysco_task_iosTests.framework */; };
 		A61EDCB728748DAF008CC6DF /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61EDCB628748DAF008CC6DF /* UIView+Extension.swift */; };
 		A61EDCBA287491A1008CC6DF /* PlanetHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61EDCB9287491A1008CC6DF /* PlanetHomeViewController.swift */; };
-		A61EDCBD2874954C008CC6DF /* TitleNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61EDCBC2874954C008CC6DF /* TitleNames.swift */; };
+		A61EDCBD2874954C008CC6DF /* TitleName.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61EDCBC2874954C008CC6DF /* TitleName.swift */; };
 		A61EDCC1287497BB008CC6DF /* PlanetsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61EDCC0287497BB008CC6DF /* PlanetsTableViewCell.swift */; };
 		A61EDCC328749829008CC6DF /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61EDCC228749829008CC6DF /* BaseTableViewCell.swift */; };
 		A61EDCC62874A42A008CC6DF /* PlanetHomeViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61EDCC52874A42A008CC6DF /* PlanetHomeViewModelType.swift */; };
@@ -27,6 +27,11 @@
 		A62A05C428741AA700C3F4A6 /* sysco_task_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62A05C328741AA700C3F4A6 /* sysco_task_iosTests.swift */; };
 		A62A05CE28741AA700C3F4A6 /* sysco_task_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62A05CD28741AA700C3F4A6 /* sysco_task_iosUITests.swift */; };
 		A62A05D028741AA700C3F4A6 /* sysco_task_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62A05CF28741AA700C3F4A6 /* sysco_task_iosUITestsLaunchTests.swift */; };
+		A6B50DE22874EC1F00E35EBC /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B50DE12874EC1F00E35EBC /* UIFont+Extension.swift */; };
+		A6B50DE52874ED7800E35EBC /* MainLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B50DE42874ED7800E35EBC /* MainLoading.swift */; };
+		A6B50DE82874EDFC00E35EBC /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B50DE72874EDFC00E35EBC /* BaseView.swift */; };
+		A6B50DEA2874F06700E35EBC /* CustomWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B50DE92874F06700E35EBC /* CustomWrapper.swift */; };
+		A6B50DEC2874F51200E35EBC /* LoadingText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B50DEB2874F51200E35EBC /* LoadingText.swift */; };
 		E7A832C79CB1F00152905B31 /* Pods_sysco_task_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87240E38B22F993DD319113F /* Pods_sysco_task_ios.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,7 +61,7 @@
 		95E8ED40E760699AC8543382 /* Pods_sysco_task_ios_sysco_task_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sysco_task_ios_sysco_task_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A61EDCB628748DAF008CC6DF /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		A61EDCB9287491A1008CC6DF /* PlanetHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetHomeViewController.swift; sourceTree = "<group>"; };
-		A61EDCBC2874954C008CC6DF /* TitleNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleNames.swift; sourceTree = "<group>"; };
+		A61EDCBC2874954C008CC6DF /* TitleName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleName.swift; sourceTree = "<group>"; };
 		A61EDCC0287497BB008CC6DF /* PlanetsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsTableViewCell.swift; sourceTree = "<group>"; };
 		A61EDCC228749829008CC6DF /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		A61EDCC52874A42A008CC6DF /* PlanetHomeViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetHomeViewModelType.swift; sourceTree = "<group>"; };
@@ -75,6 +80,11 @@
 		A62A05C928741AA700C3F4A6 /* sysco-task-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sysco-task-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A62A05CD28741AA700C3F4A6 /* sysco_task_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sysco_task_iosUITests.swift; sourceTree = "<group>"; };
 		A62A05CF28741AA700C3F4A6 /* sysco_task_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sysco_task_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A6B50DE12874EC1F00E35EBC /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		A6B50DE42874ED7800E35EBC /* MainLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLoading.swift; sourceTree = "<group>"; };
+		A6B50DE72874EDFC00E35EBC /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		A6B50DE92874F06700E35EBC /* CustomWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWrapper.swift; sourceTree = "<group>"; };
+		A6B50DEB2874F51200E35EBC /* LoadingText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingText.swift; sourceTree = "<group>"; };
 		C23741C984B923655A20B088 /* Pods_sysco_task_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sysco_task_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE005CDC0093E7332FFEED2E /* Pods-sysco-task-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sysco-task-iosTests.release.xcconfig"; path = "Target Support Files/Pods-sysco-task-iosTests/Pods-sysco-task-iosTests.release.xcconfig"; sourceTree = "<group>"; };
 		EF9FACD7B986981BB35A45CA /* Pods-sysco-task-ios-sysco-task-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sysco-task-ios-sysco-task-iosUITests.release.xcconfig"; path = "Target Support Files/Pods-sysco-task-ios-sysco-task-iosUITests/Pods-sysco-task-ios-sysco-task-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -142,7 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				A61EDCB828749173008CC6DF /* PlanetHome */,
-				A61EDCB428748C2C008CC6DF /* BaseController */,
+				A61EDCB428748C2C008CC6DF /* Base */,
 			);
 			path = "Controller+Viewmodel";
 			sourceTree = "<group>";
@@ -155,19 +165,22 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		A61EDCB428748C2C008CC6DF /* BaseController */ = {
+		A61EDCB428748C2C008CC6DF /* Base */ = {
 			isa = PBXGroup;
 			children = (
 				A62A05B028741AA400C3F4A6 /* BaseViewController.swift */,
 				A61EDCC228749829008CC6DF /* BaseTableViewCell.swift */,
+				A6B50DE72874EDFC00E35EBC /* BaseView.swift */,
 			);
-			path = BaseController;
+			path = Base;
 			sourceTree = "<group>";
 		};
 		A61EDCB528748D95008CC6DF /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 				A61EDCB628748DAF008CC6DF /* UIView+Extension.swift */,
+				A6B50DE12874EC1F00E35EBC /* UIFont+Extension.swift */,
+				A6B50DE92874F06700E35EBC /* CustomWrapper.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -185,7 +198,8 @@
 		A61EDCBB2874952B008CC6DF /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				A61EDCBC2874954C008CC6DF /* TitleNames.swift */,
+				A61EDCBC2874954C008CC6DF /* TitleName.swift */,
+				A6B50DEB2874F51200E35EBC /* LoadingText.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -193,6 +207,7 @@
 		A61EDCBE28749770008CC6DF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A6B50DE32874ED5700E35EBC /* Loading */,
 				A61EDCBF28749777008CC6DF /* TableViewCell */,
 			);
 			path = View;
@@ -284,6 +299,14 @@
 				A62A05CF28741AA700C3F4A6 /* sysco_task_iosUITestsLaunchTests.swift */,
 			);
 			path = "sysco-task-iosUITests";
+			sourceTree = "<group>";
+		};
+		A6B50DE32874ED5700E35EBC /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				A6B50DE42874ED7800E35EBC /* MainLoading.swift */,
+			);
+			path = Loading;
 			sourceTree = "<group>";
 		};
 		F5A482C3829F33A81B79BB50 /* Frameworks */ = {
@@ -534,19 +557,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6B50DE22874EC1F00E35EBC /* UIFont+Extension.swift in Sources */,
+				A6B50DEC2874F51200E35EBC /* LoadingText.swift in Sources */,
 				A61EDCB728748DAF008CC6DF /* UIView+Extension.swift in Sources */,
 				A61EDCBA287491A1008CC6DF /* PlanetHomeViewController.swift in Sources */,
 				A62A05B128741AA400C3F4A6 /* BaseViewController.swift in Sources */,
 				A61EDCC62874A42A008CC6DF /* PlanetHomeViewModelType.swift in Sources */,
-				A61EDCBD2874954C008CC6DF /* TitleNames.swift in Sources */,
+				A61EDCBD2874954C008CC6DF /* TitleName.swift in Sources */,
 				A61EDCC82874A4F8008CC6DF /* PlanetModel.swift in Sources */,
 				A61EDCC328749829008CC6DF /* BaseTableViewCell.swift in Sources */,
 				A61EDCCA2874A59D008CC6DF /* PlanetResultModel.swift in Sources */,
 				A61EDCCD2874A69B008CC6DF /* PlanetHomeViewModel.swift in Sources */,
+				A6B50DEA2874F06700E35EBC /* CustomWrapper.swift in Sources */,
 				A62A05AD28741AA400C3F4A6 /* AppDelegate.swift in Sources */,
 				A61EDCD02874B0D1008CC6DF /* APIBaseRouter.swift in Sources */,
 				A61EDCC1287497BB008CC6DF /* PlanetsTableViewCell.swift in Sources */,
 				A61EDCD62874CFDD008CC6DF /* PlanetHome+APIRouter.swift in Sources */,
+				A6B50DE52874ED7800E35EBC /* MainLoading.swift in Sources */,
+				A6B50DE82874EDFC00E35EBC /* BaseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

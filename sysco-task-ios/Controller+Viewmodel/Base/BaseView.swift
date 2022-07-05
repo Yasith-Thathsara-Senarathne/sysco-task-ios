@@ -1,37 +1,36 @@
 //
-//  ViewController.swift
+//  BaseView.swift
 //  sysco-task-ios
 //
-//  Created by Thathsara Senarathne on 2022-07-05.
+//  Created by Thathsara Senarathne on 2022-07-06.
 //
 
 import UIKit
 
-open class BaseViewController: UIViewController {
-    
+class BaseView: UIView {
     open func config(){}
     
     open func createViews(){}
     
     open func insertAndLayoutSubviews(){}
-
+    
     private func doLoadThings(){
         config()
-    }
-    
-    open override func loadView() {
-        super.loadView()
         
         createViews()
+        
         insertAndLayoutSubviews()
     }
     
-    open override func viewDidLoad() {
-        super.viewDidLoad()
+    public override init(frame: CGRect) {
+        super.init(frame: frame)
         
         doLoadThings()
     }
-
-
+    
+    public required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+        doLoadThings()
+    }
 }
-

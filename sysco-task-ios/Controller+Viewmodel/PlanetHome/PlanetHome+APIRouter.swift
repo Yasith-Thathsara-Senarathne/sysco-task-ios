@@ -16,11 +16,17 @@ extension PlanetHomeViewModel {
 
 extension PlanetHomeViewModel.APIRoute: APIBaseRouter {
     var path: String {
-        "planets"
+        switch self {
+        case .fetchPlanets:
+            return "planets"
+        }
     }
     
     var method: Moya.Method {
-        .get
+        switch self {
+        case .fetchPlanets:
+            return .get
+        }
     }
     
     var task: Task {

@@ -8,16 +8,14 @@
 import UIKit
 
 class PlanetsTableViewCell: BaseTableViewCell {
-    private var planetName: UILabel!
+    private var planetNameLabel: UILabel!
     
-    private var planetClimate: UILabel!
+    private var planetClimateLabel: UILabel!
     
-    public func setPlanetName(value: String) {
-        planetName.text = value.capitalized
-    }
-    
-    public func setPlanetClimate(value: String) {
-        planetClimate.text = value.capitalized
+    func updateUIWithData(data: PlanetModel) {
+        planetNameLabel.text = data.name.capitalized
+        
+        planetClimateLabel.text = data.climate.capitalized
     }
     
     override func config() {
@@ -25,24 +23,33 @@ class PlanetsTableViewCell: BaseTableViewCell {
     }
     
     override func createViews() {
-        planetName = UILabel()
-        planetName.font = .systemFont(ofSize: 20, weight: .bold)
+        planetNameLabel = UILabel()
         
-        planetClimate = UILabel()
-        planetClimate.font = .systemFont(ofSize: 16, weight: .medium)
+        planetNameLabel.font = .tvTitle
+        
+        
+        
+        planetClimateLabel = UILabel()
+        
+        planetClimateLabel.font = .tvSubTitle
         
     }
     
     override func insertAndLayoutSubviews() {
         let vStackView = UIStackView()
+        
         vStackView.axis = .vertical
+        
         vStackView.distribution = .fill
+        
         vStackView.spacing = 4
         
-        vStackView.addArrangedSubview(planetName)
-        vStackView.addArrangedSubview(planetClimate)
+        vStackView.addArrangedSubview(planetNameLabel)
+        
+        vStackView.addArrangedSubview(planetClimateLabel)
         
         addSubview(vStackView)
+        
         vStackView.activateLayouts(equalConstant: 20, to: self)
         
     }

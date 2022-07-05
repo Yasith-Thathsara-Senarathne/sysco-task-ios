@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct TitleNames {
+struct TitleName {
     static let planets = "Planets"
 }
