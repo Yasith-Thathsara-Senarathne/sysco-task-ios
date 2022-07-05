@@ -1,0 +1,895 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4BDA1DB0E6DA5B1DC247306C /* Pods_sysco_task_ios_sysco_task_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95E8ED40E760699AC8543382 /* Pods_sysco_task_ios_sysco_task_iosUITests.framework */; };
+		5F499A9E4A7CD58432DF32BD /* Pods_sysco_task_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23741C984B923655A20B088 /* Pods_sysco_task_iosTests.framework */; };
+		A61EDCB728748DAF008CC6DF /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61EDCB628748DAF008CC6DF /* UIView+Extension.swift */; };
+		A61EDCBA287491A1008CC6DF /* PlanetHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61EDCB9287491A1008CC6DF /* PlanetHomeViewController.swift */; };
+		A61EDCBD2874954C008CC6DF /* TitleNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61EDCBC2874954C008CC6DF /* TitleNames.swift */; };
+		A61EDCC1287497BB008CC6DF /* PlanetsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61EDCC0287497BB008CC6DF /* PlanetsTableViewCell.swift */; };
+		A61EDCC328749829008CC6DF /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61EDCC228749829008CC6DF /* BaseTableViewCell.swift */; };
+		A61EDCC62874A42A008CC6DF /* PlanetHomeViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61EDCC52874A42A008CC6DF /* PlanetHomeViewModelType.swift */; };
+		A61EDCC82874A4F8008CC6DF /* PlanetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61EDCC72874A4F8008CC6DF /* PlanetModel.swift */; };
+		A61EDCCA2874A59D008CC6DF /* PlanetResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61EDCC92874A59D008CC6DF /* PlanetResultModel.swift */; };
+		A61EDCCD2874A69B008CC6DF /* PlanetHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61EDCCC2874A69B008CC6DF /* PlanetHomeViewModel.swift */; };
+		A61EDCD02874B0D1008CC6DF /* APIBaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61EDCCF2874B0D1008CC6DF /* APIBaseRouter.swift */; };
+		A61EDCD62874CFDD008CC6DF /* PlanetHome+APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61EDCD52874CFDD008CC6DF /* PlanetHome+APIRouter.swift */; };
+		A62A05AD28741AA400C3F4A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62A05AC28741AA400C3F4A6 /* AppDelegate.swift */; };
+		A62A05B128741AA400C3F4A6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62A05B028741AA400C3F4A6 /* BaseViewController.swift */; };
+		A62A05B628741AA600C3F4A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A62A05B528741AA600C3F4A6 /* Assets.xcassets */; };
+		A62A05B928741AA600C3F4A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A62A05B728741AA600C3F4A6 /* LaunchScreen.storyboard */; };
+		A62A05C428741AA700C3F4A6 /* sysco_task_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62A05C328741AA700C3F4A6 /* sysco_task_iosTests.swift */; };
+		A62A05CE28741AA700C3F4A6 /* sysco_task_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62A05CD28741AA700C3F4A6 /* sysco_task_iosUITests.swift */; };
+		A62A05D028741AA700C3F4A6 /* sysco_task_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62A05CF28741AA700C3F4A6 /* sysco_task_iosUITestsLaunchTests.swift */; };
+		E7A832C79CB1F00152905B31 /* Pods_sysco_task_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87240E38B22F993DD319113F /* Pods_sysco_task_ios.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A62A05C028741AA700C3F4A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A62A05A128741AA400C3F4A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A62A05A828741AA400C3F4A6;
+			remoteInfo = "sysco-task-ios";
+		};
+		A62A05CA28741AA700C3F4A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A62A05A128741AA400C3F4A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A62A05A828741AA400C3F4A6;
+			remoteInfo = "sysco-task-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		098CFA91D4685874CA4BF43B /* Pods-sysco-task-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sysco-task-ios.debug.xcconfig"; path = "Target Support Files/Pods-sysco-task-ios/Pods-sysco-task-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		46D9DE7447ACB384FF234B17 /* Pods-sysco-task-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sysco-task-iosTests.debug.xcconfig"; path = "Target Support Files/Pods-sysco-task-iosTests/Pods-sysco-task-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		50B3D627560D93E48736A2AA /* Pods-sysco-task-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sysco-task-ios.release.xcconfig"; path = "Target Support Files/Pods-sysco-task-ios/Pods-sysco-task-ios.release.xcconfig"; sourceTree = "<group>"; };
+		87240E38B22F993DD319113F /* Pods_sysco_task_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sysco_task_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8880CEF2707316F0F1CE3727 /* Pods-sysco-task-ios-sysco-task-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sysco-task-ios-sysco-task-iosUITests.debug.xcconfig"; path = "Target Support Files/Pods-sysco-task-ios-sysco-task-iosUITests/Pods-sysco-task-ios-sysco-task-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		95E8ED40E760699AC8543382 /* Pods_sysco_task_ios_sysco_task_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sysco_task_ios_sysco_task_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A61EDCB628748DAF008CC6DF /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		A61EDCB9287491A1008CC6DF /* PlanetHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetHomeViewController.swift; sourceTree = "<group>"; };
+		A61EDCBC2874954C008CC6DF /* TitleNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleNames.swift; sourceTree = "<group>"; };
+		A61EDCC0287497BB008CC6DF /* PlanetsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsTableViewCell.swift; sourceTree = "<group>"; };
+		A61EDCC228749829008CC6DF /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		A61EDCC52874A42A008CC6DF /* PlanetHomeViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetHomeViewModelType.swift; sourceTree = "<group>"; };
+		A61EDCC72874A4F8008CC6DF /* PlanetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetModel.swift; sourceTree = "<group>"; };
+		A61EDCC92874A59D008CC6DF /* PlanetResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetResultModel.swift; sourceTree = "<group>"; };
+		A61EDCCC2874A69B008CC6DF /* PlanetHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetHomeViewModel.swift; sourceTree = "<group>"; };
+		A61EDCCF2874B0D1008CC6DF /* APIBaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIBaseRouter.swift; sourceTree = "<group>"; };
+		A61EDCD52874CFDD008CC6DF /* PlanetHome+APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlanetHome+APIRouter.swift"; sourceTree = "<group>"; };
+		A62A05A928741AA400C3F4A6 /* sysco-task-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sysco-task-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A62A05AC28741AA400C3F4A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A62A05B028741AA400C3F4A6 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		A62A05B528741AA600C3F4A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A62A05B828741AA600C3F4A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A62A05BF28741AA700C3F4A6 /* sysco-task-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sysco-task-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A62A05C328741AA700C3F4A6 /* sysco_task_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sysco_task_iosTests.swift; sourceTree = "<group>"; };
+		A62A05C928741AA700C3F4A6 /* sysco-task-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sysco-task-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A62A05CD28741AA700C3F4A6 /* sysco_task_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sysco_task_iosUITests.swift; sourceTree = "<group>"; };
+		A62A05CF28741AA700C3F4A6 /* sysco_task_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sysco_task_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C23741C984B923655A20B088 /* Pods_sysco_task_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sysco_task_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE005CDC0093E7332FFEED2E /* Pods-sysco-task-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sysco-task-iosTests.release.xcconfig"; path = "Target Support Files/Pods-sysco-task-iosTests/Pods-sysco-task-iosTests.release.xcconfig"; sourceTree = "<group>"; };
+		EF9FACD7B986981BB35A45CA /* Pods-sysco-task-ios-sysco-task-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sysco-task-ios-sysco-task-iosUITests.release.xcconfig"; path = "Target Support Files/Pods-sysco-task-ios-sysco-task-iosUITests/Pods-sysco-task-ios-sysco-task-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A62A05A628741AA400C3F4A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7A832C79CB1F00152905B31 /* Pods_sysco_task_ios.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A62A05BC28741AA700C3F4A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F499A9E4A7CD58432DF32BD /* Pods_sysco_task_iosTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A62A05C628741AA700C3F4A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BDA1DB0E6DA5B1DC247306C /* Pods_sysco_task_ios_sysco_task_iosUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F332B0DFB9657A36D24A7E8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				098CFA91D4685874CA4BF43B /* Pods-sysco-task-ios.debug.xcconfig */,
+				50B3D627560D93E48736A2AA /* Pods-sysco-task-ios.release.xcconfig */,
+				8880CEF2707316F0F1CE3727 /* Pods-sysco-task-ios-sysco-task-iosUITests.debug.xcconfig */,
+				EF9FACD7B986981BB35A45CA /* Pods-sysco-task-ios-sysco-task-iosUITests.release.xcconfig */,
+				46D9DE7447ACB384FF234B17 /* Pods-sysco-task-iosTests.debug.xcconfig */,
+				EE005CDC0093E7332FFEED2E /* Pods-sysco-task-iosTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A61EDCB02874274F008CC6DF /* SystemSupport */ = {
+			isa = PBXGroup;
+			children = (
+				A62A05B528741AA600C3F4A6 /* Assets.xcassets */,
+				A62A05AC28741AA400C3F4A6 /* AppDelegate.swift */,
+			);
+			path = SystemSupport;
+			sourceTree = "<group>";
+		};
+		A61EDCB1287427B5008CC6DF /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				A62A05B728741AA600C3F4A6 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		A61EDCB228748364008CC6DF /* Controller+Viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				A61EDCB828749173008CC6DF /* PlanetHome */,
+				A61EDCB428748C2C008CC6DF /* BaseController */,
+			);
+			path = "Controller+Viewmodel";
+			sourceTree = "<group>";
+		};
+		A61EDCB328748383008CC6DF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A61EDCCB2874A60D008CC6DF /* PlanetModel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A61EDCB428748C2C008CC6DF /* BaseController */ = {
+			isa = PBXGroup;
+			children = (
+				A62A05B028741AA400C3F4A6 /* BaseViewController.swift */,
+				A61EDCC228749829008CC6DF /* BaseTableViewCell.swift */,
+			);
+			path = BaseController;
+			sourceTree = "<group>";
+		};
+		A61EDCB528748D95008CC6DF /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A61EDCB628748DAF008CC6DF /* UIView+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A61EDCB828749173008CC6DF /* PlanetHome */ = {
+			isa = PBXGroup;
+			children = (
+				A61EDCC42874A410008CC6DF /* ViewModel */,
+				A61EDCB9287491A1008CC6DF /* PlanetHomeViewController.swift */,
+				A61EDCD52874CFDD008CC6DF /* PlanetHome+APIRouter.swift */,
+			);
+			path = PlanetHome;
+			sourceTree = "<group>";
+		};
+		A61EDCBB2874952B008CC6DF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A61EDCBC2874954C008CC6DF /* TitleNames.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A61EDCBE28749770008CC6DF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A61EDCBF28749777008CC6DF /* TableViewCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A61EDCBF28749777008CC6DF /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A61EDCC0287497BB008CC6DF /* PlanetsTableViewCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		A61EDCC42874A410008CC6DF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A61EDCC52874A42A008CC6DF /* PlanetHomeViewModelType.swift */,
+				A61EDCCC2874A69B008CC6DF /* PlanetHomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A61EDCCB2874A60D008CC6DF /* PlanetModel */ = {
+			isa = PBXGroup;
+			children = (
+				A61EDCC72874A4F8008CC6DF /* PlanetModel.swift */,
+				A61EDCC92874A59D008CC6DF /* PlanetResultModel.swift */,
+			);
+			path = PlanetModel;
+			sourceTree = "<group>";
+		};
+		A61EDCCE2874B0BC008CC6DF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A61EDCCF2874B0D1008CC6DF /* APIBaseRouter.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A62A05A028741AA400C3F4A6 = {
+			isa = PBXGroup;
+			children = (
+				A62A05AB28741AA400C3F4A6 /* sysco-task-ios */,
+				A62A05C228741AA700C3F4A6 /* sysco-task-iosTests */,
+				A62A05CC28741AA700C3F4A6 /* sysco-task-iosUITests */,
+				A62A05AA28741AA400C3F4A6 /* Products */,
+				3F332B0DFB9657A36D24A7E8 /* Pods */,
+				F5A482C3829F33A81B79BB50 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A62A05AA28741AA400C3F4A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A62A05A928741AA400C3F4A6 /* sysco-task-ios.app */,
+				A62A05BF28741AA700C3F4A6 /* sysco-task-iosTests.xctest */,
+				A62A05C928741AA700C3F4A6 /* sysco-task-iosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A62A05AB28741AA400C3F4A6 /* sysco-task-ios */ = {
+			isa = PBXGroup;
+			children = (
+				A61EDCCE2874B0BC008CC6DF /* Network */,
+				A61EDCBE28749770008CC6DF /* View */,
+				A61EDCBB2874952B008CC6DF /* Utilities */,
+				A61EDCB528748D95008CC6DF /* Extension */,
+				A61EDCB328748383008CC6DF /* Model */,
+				A61EDCB228748364008CC6DF /* Controller+Viewmodel */,
+				A61EDCB1287427B5008CC6DF /* Storyboard */,
+				A61EDCB02874274F008CC6DF /* SystemSupport */,
+			);
+			path = "sysco-task-ios";
+			sourceTree = "<group>";
+		};
+		A62A05C228741AA700C3F4A6 /* sysco-task-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				A62A05C328741AA700C3F4A6 /* sysco_task_iosTests.swift */,
+			);
+			path = "sysco-task-iosTests";
+			sourceTree = "<group>";
+		};
+		A62A05CC28741AA700C3F4A6 /* sysco-task-iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A62A05CD28741AA700C3F4A6 /* sysco_task_iosUITests.swift */,
+				A62A05CF28741AA700C3F4A6 /* sysco_task_iosUITestsLaunchTests.swift */,
+			);
+			path = "sysco-task-iosUITests";
+			sourceTree = "<group>";
+		};
+		F5A482C3829F33A81B79BB50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87240E38B22F993DD319113F /* Pods_sysco_task_ios.framework */,
+				95E8ED40E760699AC8543382 /* Pods_sysco_task_ios_sysco_task_iosUITests.framework */,
+				C23741C984B923655A20B088 /* Pods_sysco_task_iosTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A62A05A828741AA400C3F4A6 /* sysco-task-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A62A05D328741AA700C3F4A6 /* Build configuration list for PBXNativeTarget "sysco-task-ios" */;
+			buildPhases = (
+				5FEAD57A4C2204475AE282FB /* [CP] Check Pods Manifest.lock */,
+				A62A05A528741AA400C3F4A6 /* Sources */,
+				A62A05A628741AA400C3F4A6 /* Frameworks */,
+				A62A05A728741AA400C3F4A6 /* Resources */,
+				40455EF54919790E4DE96855 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "sysco-task-ios";
+			productName = "sysco-task-ios";
+			productReference = A62A05A928741AA400C3F4A6 /* sysco-task-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A62A05BE28741AA700C3F4A6 /* sysco-task-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A62A05D628741AA700C3F4A6 /* Build configuration list for PBXNativeTarget "sysco-task-iosTests" */;
+			buildPhases = (
+				00A6A313D5186E8495E9086F /* [CP] Check Pods Manifest.lock */,
+				A62A05BB28741AA700C3F4A6 /* Sources */,
+				A62A05BC28741AA700C3F4A6 /* Frameworks */,
+				A62A05BD28741AA700C3F4A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A62A05C128741AA700C3F4A6 /* PBXTargetDependency */,
+			);
+			name = "sysco-task-iosTests";
+			productName = "sysco-task-iosTests";
+			productReference = A62A05BF28741AA700C3F4A6 /* sysco-task-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A62A05C828741AA700C3F4A6 /* sysco-task-iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A62A05D928741AA700C3F4A6 /* Build configuration list for PBXNativeTarget "sysco-task-iosUITests" */;
+			buildPhases = (
+				4AC65ED5E9B8886ABCF2B025 /* [CP] Check Pods Manifest.lock */,
+				A62A05C528741AA700C3F4A6 /* Sources */,
+				A62A05C628741AA700C3F4A6 /* Frameworks */,
+				A62A05C728741AA700C3F4A6 /* Resources */,
+				4200539EBBDEBEDD5D761E64 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A62A05CB28741AA700C3F4A6 /* PBXTargetDependency */,
+			);
+			name = "sysco-task-iosUITests";
+			productName = "sysco-task-iosUITests";
+			productReference = A62A05C928741AA700C3F4A6 /* sysco-task-iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A62A05A128741AA400C3F4A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					A62A05A828741AA400C3F4A6 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					A62A05BE28741AA700C3F4A6 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = A62A05A828741AA400C3F4A6;
+					};
+					A62A05C828741AA700C3F4A6 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = A62A05A828741AA400C3F4A6;
+					};
+				};
+			};
+			buildConfigurationList = A62A05A428741AA400C3F4A6 /* Build configuration list for PBXProject "sysco-task-ios" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A62A05A028741AA400C3F4A6;
+			productRefGroup = A62A05AA28741AA400C3F4A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A62A05A828741AA400C3F4A6 /* sysco-task-ios */,
+				A62A05BE28741AA700C3F4A6 /* sysco-task-iosTests */,
+				A62A05C828741AA700C3F4A6 /* sysco-task-iosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A62A05A728741AA400C3F4A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A62A05B928741AA600C3F4A6 /* LaunchScreen.storyboard in Resources */,
+				A62A05B628741AA600C3F4A6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A62A05BD28741AA700C3F4A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A62A05C728741AA700C3F4A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00A6A313D5186E8495E9086F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sysco-task-iosTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40455EF54919790E4DE96855 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sysco-task-ios/Pods-sysco-task-ios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sysco-task-ios/Pods-sysco-task-ios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sysco-task-ios/Pods-sysco-task-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4200539EBBDEBEDD5D761E64 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sysco-task-ios-sysco-task-iosUITests/Pods-sysco-task-ios-sysco-task-iosUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sysco-task-ios-sysco-task-iosUITests/Pods-sysco-task-ios-sysco-task-iosUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sysco-task-ios-sysco-task-iosUITests/Pods-sysco-task-ios-sysco-task-iosUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4AC65ED5E9B8886ABCF2B025 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sysco-task-ios-sysco-task-iosUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FEAD57A4C2204475AE282FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sysco-task-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A62A05A528741AA400C3F4A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A61EDCB728748DAF008CC6DF /* UIView+Extension.swift in Sources */,
+				A61EDCBA287491A1008CC6DF /* PlanetHomeViewController.swift in Sources */,
+				A62A05B128741AA400C3F4A6 /* BaseViewController.swift in Sources */,
+				A61EDCC62874A42A008CC6DF /* PlanetHomeViewModelType.swift in Sources */,
+				A61EDCBD2874954C008CC6DF /* TitleNames.swift in Sources */,
+				A61EDCC82874A4F8008CC6DF /* PlanetModel.swift in Sources */,
+				A61EDCC328749829008CC6DF /* BaseTableViewCell.swift in Sources */,
+				A61EDCCA2874A59D008CC6DF /* PlanetResultModel.swift in Sources */,
+				A61EDCCD2874A69B008CC6DF /* PlanetHomeViewModel.swift in Sources */,
+				A62A05AD28741AA400C3F4A6 /* AppDelegate.swift in Sources */,
+				A61EDCD02874B0D1008CC6DF /* APIBaseRouter.swift in Sources */,
+				A61EDCC1287497BB008CC6DF /* PlanetsTableViewCell.swift in Sources */,
+				A61EDCD62874CFDD008CC6DF /* PlanetHome+APIRouter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A62A05BB28741AA700C3F4A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A62A05C428741AA700C3F4A6 /* sysco_task_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A62A05C528741AA700C3F4A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A62A05CE28741AA700C3F4A6 /* sysco_task_iosUITests.swift in Sources */,
+				A62A05D028741AA700C3F4A6 /* sysco_task_iosUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A62A05C128741AA700C3F4A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A62A05A828741AA400C3F4A6 /* sysco-task-ios */;
+			targetProxy = A62A05C028741AA700C3F4A6 /* PBXContainerItemProxy */;
+		};
+		A62A05CB28741AA700C3F4A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A62A05A828741AA400C3F4A6 /* sysco-task-ios */;
+			targetProxy = A62A05CA28741AA700C3F4A6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A62A05B728741AA600C3F4A6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A62A05B828741AA600C3F4A6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A62A05D128741AA700C3F4A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A62A05D228741AA700C3F4A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A62A05D428741AA700C3F4A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 098CFA91D4685874CA4BF43B /* Pods-sysco-task-ios.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5U6C6VD933;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "sysco-task-ios/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Sysco Task";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yts.sysco-task-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A62A05D528741AA700C3F4A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50B3D627560D93E48736A2AA /* Pods-sysco-task-ios.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5U6C6VD933;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "sysco-task-ios/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Sysco Task";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yts.sysco-task-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A62A05D728741AA700C3F4A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46D9DE7447ACB384FF234B17 /* Pods-sysco-task-iosTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5U6C6VD933;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yts.sysco-task-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sysco-task-ios.app/sysco-task-ios";
+			};
+			name = Debug;
+		};
+		A62A05D828741AA700C3F4A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE005CDC0093E7332FFEED2E /* Pods-sysco-task-iosTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5U6C6VD933;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yts.sysco-task-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sysco-task-ios.app/sysco-task-ios";
+			};
+			name = Release;
+		};
+		A62A05DA28741AA700C3F4A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8880CEF2707316F0F1CE3727 /* Pods-sysco-task-ios-sysco-task-iosUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5U6C6VD933;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yts.sysco-task-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "sysco-task-ios";
+			};
+			name = Debug;
+		};
+		A62A05DB28741AA700C3F4A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF9FACD7B986981BB35A45CA /* Pods-sysco-task-ios-sysco-task-iosUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5U6C6VD933;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yts.sysco-task-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "sysco-task-ios";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A62A05A428741AA400C3F4A6 /* Build configuration list for PBXProject "sysco-task-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A62A05D128741AA700C3F4A6 /* Debug */,
+				A62A05D228741AA700C3F4A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A62A05D328741AA700C3F4A6 /* Build configuration list for PBXNativeTarget "sysco-task-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A62A05D428741AA700C3F4A6 /* Debug */,
+				A62A05D528741AA700C3F4A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A62A05D628741AA700C3F4A6 /* Build configuration list for PBXNativeTarget "sysco-task-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A62A05D728741AA700C3F4A6 /* Debug */,
+				A62A05D828741AA700C3F4A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A62A05D928741AA700C3F4A6 /* Build configuration list for PBXNativeTarget "sysco-task-iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A62A05DA28741AA700C3F4A6 /* Debug */,
+				A62A05DB28741AA700C3F4A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A62A05A128741AA400C3F4A6 /* Project object */;
+}
