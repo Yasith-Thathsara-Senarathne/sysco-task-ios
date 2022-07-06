@@ -23,6 +23,20 @@ class PlanetHomeViewController: BaseViewController {
     
     private var mainLoading: MainLoading!
     
+    private lazy var backgroundSpinner: UIView = {
+            let view = UIView(frame: CGRect(
+                                x: 0,
+                                y: 0,
+                                width: view.frame.size.width,
+                                height: 100)
+            )
+        let spinner = UIActivityIndicatorView.init(style: .medium)
+            spinner.center = view.center
+            view.addSubview(spinner)
+            spinner.startAnimating()
+            return view
+        }()
+    
     override func config() {
         // make large navigation title
         navigationController?.navigationBar.prefersLargeTitles = true
@@ -33,12 +47,12 @@ class PlanetHomeViewController: BaseViewController {
     
     override func createViews() {
         tableView = UITableView()
-        
+
         tableView.register(PlanetsTableViewCell.self, forCellReuseIdentifier: cellId)
-        
+
         tableView.separatorStyle = .none
-        
-        tableView.backgroundColor = UIColor.clear
+
+        tableView.tableFooterView = UIView(frame: .zero)
         
         
         
@@ -65,6 +79,7 @@ class PlanetHomeViewController: BaseViewController {
         // init view model
         viewModel = PlanetHomeViewModel()
         
+        // init disposebag
         disposeBag = DisposeBag()
         
         // bind view model to controller
@@ -75,21 +90,35 @@ class PlanetHomeViewController: BaseViewController {
     }
     
     func bindViewModel() {
-        let planetResultModelSubject = viewModel.planetListModel.share(replay: 1, scope: .whileConnected)
         
-        planetResultModelSubject.bind(to: tableView.rx.items(cellIdentifier: cellId, cellType: PlanetsTableViewCell.self)) {_, data, cell in
+        viewModel.planetListModel.bind(to: tableView.rx.items(cellIdentifier: cellId, cellType: PlanetsTableViewCell.self)) {_, data, cell in
             cell.updateUIWithData(data: data)
         }
         .disposed(by: self.disposeBag)
         
+        tableView.rx
+            .didScroll
+            .map{ [unowned self]_  in self.tableView.isNearBottomEdge()}
+            .skip(1)
+            .distinctUntilChanged()
+            .filter{$0}
+            .subscribe(onNext: {[weak self] _ in
+                guard let `self` = self else { return }
+                
+                self.viewModel.fetchMorePlanets()
+            }).disposed(by: self.disposeBag)
         
         
-        let loadingSubject = viewModel.mainLoading.share(replay: 1, scope: .whileConnected)
-        
-        loadingSubject
+        viewModel.mainLoading
             .map{($0, LoadingText.loadingPlanets)}
             .bind(to: mainLoading.rx.activeLoading)
             .disposed(by: self.disposeBag)
+        
+        viewModel.backgroundLoading.subscribe { [weak self] in
+            guard let `self` = self else { return }
             
+            self.tableView.tableFooterView = $0.element ?? false ? self.backgroundSpinner : UIView(frame: .zero)
+        }.disposed(by: self.disposeBag)
+        
     }
 }

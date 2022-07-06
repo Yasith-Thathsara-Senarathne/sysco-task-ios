@@ -7,13 +7,18 @@
 
 import Foundation
 import RxSwift
+import RxCocoa
 
 protocol PlanetHomeViewModelType {
     var planetListModel: Observable<[PlanetModel]> { get }
+    
+    var planetList: BehaviorRelay<[PlanetModel]> { get set }
     
     var mainLoading: Observable<Bool> { get }
     
     var backgroundLoading: Observable<Bool> { get }
     
-    func fetchPlanets()
+    mutating func fetchPlanets()
+    
+    func fetchMorePlanets()
 }

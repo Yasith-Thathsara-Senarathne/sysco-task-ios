@@ -32,6 +32,7 @@
 		A6B50DE82874EDFC00E35EBC /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B50DE72874EDFC00E35EBC /* BaseView.swift */; };
 		A6B50DEA2874F06700E35EBC /* CustomWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B50DE92874F06700E35EBC /* CustomWrapper.swift */; };
 		A6B50DEC2874F51200E35EBC /* LoadingText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B50DEB2874F51200E35EBC /* LoadingText.swift */; };
+		A6B50DEE2875131600E35EBC /* UIScrollView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B50DED2875131600E35EBC /* UIScrollView+Extension.swift */; };
 		E7A832C79CB1F00152905B31 /* Pods_sysco_task_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87240E38B22F993DD319113F /* Pods_sysco_task_ios.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +86,7 @@
 		A6B50DE72874EDFC00E35EBC /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		A6B50DE92874F06700E35EBC /* CustomWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWrapper.swift; sourceTree = "<group>"; };
 		A6B50DEB2874F51200E35EBC /* LoadingText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingText.swift; sourceTree = "<group>"; };
+		A6B50DED2875131600E35EBC /* UIScrollView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Extension.swift"; sourceTree = "<group>"; };
 		C23741C984B923655A20B088 /* Pods_sysco_task_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sysco_task_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE005CDC0093E7332FFEED2E /* Pods-sysco-task-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sysco-task-iosTests.release.xcconfig"; path = "Target Support Files/Pods-sysco-task-iosTests/Pods-sysco-task-iosTests.release.xcconfig"; sourceTree = "<group>"; };
 		EF9FACD7B986981BB35A45CA /* Pods-sysco-task-ios-sysco-task-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sysco-task-ios-sysco-task-iosUITests.release.xcconfig"; path = "Target Support Files/Pods-sysco-task-ios-sysco-task-iosUITests/Pods-sysco-task-ios-sysco-task-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 				A61EDCB628748DAF008CC6DF /* UIView+Extension.swift */,
 				A6B50DE12874EC1F00E35EBC /* UIFont+Extension.swift */,
 				A6B50DE92874F06700E35EBC /* CustomWrapper.swift */,
+				A6B50DED2875131600E35EBC /* UIScrollView+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -571,6 +574,7 @@
 				A6B50DEA2874F06700E35EBC /* CustomWrapper.swift in Sources */,
 				A62A05AD28741AA400C3F4A6 /* AppDelegate.swift in Sources */,
 				A61EDCD02874B0D1008CC6DF /* APIBaseRouter.swift in Sources */,
+				A6B50DEE2875131600E35EBC /* UIScrollView+Extension.swift in Sources */,
 				A61EDCC1287497BB008CC6DF /* PlanetsTableViewCell.swift in Sources */,
 				A61EDCD62874CFDD008CC6DF /* PlanetHome+APIRouter.swift in Sources */,
 				A6B50DE52874ED7800E35EBC /* MainLoading.swift in Sources */,
