@@ -9,6 +9,8 @@ import Foundation
 import UIKit
 
 class MainLoading: BaseView {
+    
+    // variables
     var activityIndicator: UIActivityIndicatorView!
     
     var loadingLabel: UILabel!

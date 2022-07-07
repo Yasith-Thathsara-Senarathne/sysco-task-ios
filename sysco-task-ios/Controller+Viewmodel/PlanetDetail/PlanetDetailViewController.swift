@@ -25,8 +25,11 @@ class PlanetDetailViewController: BaseViewController {
     private var gravityLabel: UILabel!
     
     override func config() {
+        
+        // change view background color
         view.backgroundColor = UIColor.white
         
+        // change navigation title
         title = viewModel.planetModel?.name.capitalized
     }
     
@@ -101,6 +104,7 @@ class PlanetDetailViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // update UI with data
         if let planetModel = viewModel.planetModel {
             updateUIWithData(data: planetModel)
         }
