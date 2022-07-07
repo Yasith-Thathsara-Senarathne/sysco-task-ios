@@ -18,6 +18,10 @@ extension UIFont {
         return .systemFont(ofSize: 16, weight: .medium)
     }
     
+    class var labelTitle: UIFont {
+        return .systemFont(ofSize: 20, weight: .medium)
+    }
+    
     class var labelBody: UIFont {
         return .systemFont(ofSize: 14)
     }

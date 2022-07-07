@@ -7,14 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4BDA1DB0E6DA5B1DC247306C /* Pods_sysco_task_ios_sysco_task_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95E8ED40E760699AC8543382 /* Pods_sysco_task_ios_sysco_task_iosUITests.framework */; };
-		5F499A9E4A7CD58432DF32BD /* Pods_sysco_task_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23741C984B923655A20B088 /* Pods_sysco_task_iosTests.framework */; };
+		08AE33EF31C4FE13373E550A /* Pods_sysco_task_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1809F009C24BBFBD367C16E6 /* Pods_sysco_task_iosTests.framework */; };
 		A61EDCB728748DAF008CC6DF /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61EDCB628748DAF008CC6DF /* UIView+Extension.swift */; };
 		A61EDCBA287491A1008CC6DF /* PlanetHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61EDCB9287491A1008CC6DF /* PlanetHomeViewController.swift */; };
 		A61EDCBD2874954C008CC6DF /* TitleName.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61EDCBC2874954C008CC6DF /* TitleName.swift */; };
 		A61EDCC1287497BB008CC6DF /* PlanetsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61EDCC0287497BB008CC6DF /* PlanetsTableViewCell.swift */; };
 		A61EDCC328749829008CC6DF /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61EDCC228749829008CC6DF /* BaseTableViewCell.swift */; };
-		A61EDCC62874A42A008CC6DF /* PlanetHomeViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61EDCC52874A42A008CC6DF /* PlanetHomeViewModelType.swift */; };
 		A61EDCC82874A4F8008CC6DF /* PlanetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61EDCC72874A4F8008CC6DF /* PlanetModel.swift */; };
 		A61EDCCA2874A59D008CC6DF /* PlanetResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61EDCC92874A59D008CC6DF /* PlanetResultModel.swift */; };
 		A61EDCCD2874A69B008CC6DF /* PlanetHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61EDCCC2874A69B008CC6DF /* PlanetHomeViewModel.swift */; };
@@ -33,7 +31,10 @@
 		A6B50DEA2874F06700E35EBC /* CustomWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B50DE92874F06700E35EBC /* CustomWrapper.swift */; };
 		A6B50DEC2874F51200E35EBC /* LoadingText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B50DEB2874F51200E35EBC /* LoadingText.swift */; };
 		A6B50DEE2875131600E35EBC /* UIScrollView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B50DED2875131600E35EBC /* UIScrollView+Extension.swift */; };
-		E7A832C79CB1F00152905B31 /* Pods_sysco_task_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87240E38B22F993DD319113F /* Pods_sysco_task_ios.framework */; };
+		A6B50DF2287524A000E35EBC /* PlanetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B50DF1287524A000E35EBC /* PlanetDetailViewController.swift */; };
+		A6B50DF4287686E200E35EBC /* PlanetDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B50DF3287686E200E35EBC /* PlanetDetailViewModel.swift */; };
+		A7FC4B6AC8420CC080847B78 /* Pods_sysco_task_ios_sysco_task_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6309D4430F9935F99C7FB913 /* Pods_sysco_task_ios_sysco_task_iosUITests.framework */; };
+		B84FD9744623390C7C47EBB7 /* Pods_sysco_task_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A126A37C988D1244B97AB05D /* Pods_sysco_task_ios.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,18 +55,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		098CFA91D4685874CA4BF43B /* Pods-sysco-task-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sysco-task-ios.debug.xcconfig"; path = "Target Support Files/Pods-sysco-task-ios/Pods-sysco-task-ios.debug.xcconfig"; sourceTree = "<group>"; };
-		46D9DE7447ACB384FF234B17 /* Pods-sysco-task-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sysco-task-iosTests.debug.xcconfig"; path = "Target Support Files/Pods-sysco-task-iosTests/Pods-sysco-task-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
-		50B3D627560D93E48736A2AA /* Pods-sysco-task-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sysco-task-ios.release.xcconfig"; path = "Target Support Files/Pods-sysco-task-ios/Pods-sysco-task-ios.release.xcconfig"; sourceTree = "<group>"; };
-		87240E38B22F993DD319113F /* Pods_sysco_task_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sysco_task_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8880CEF2707316F0F1CE3727 /* Pods-sysco-task-ios-sysco-task-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sysco-task-ios-sysco-task-iosUITests.debug.xcconfig"; path = "Target Support Files/Pods-sysco-task-ios-sysco-task-iosUITests/Pods-sysco-task-ios-sysco-task-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		95E8ED40E760699AC8543382 /* Pods_sysco_task_ios_sysco_task_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sysco_task_ios_sysco_task_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1809F009C24BBFBD367C16E6 /* Pods_sysco_task_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sysco_task_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A3CEC407F61FF49A0F31EB1 /* Pods-sysco-task-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sysco-task-ios.release.xcconfig"; path = "Target Support Files/Pods-sysco-task-ios/Pods-sysco-task-ios.release.xcconfig"; sourceTree = "<group>"; };
+		6309D4430F9935F99C7FB913 /* Pods_sysco_task_ios_sysco_task_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sysco_task_ios_sysco_task_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CEACA89243C3D01B7DB2B8B /* Pods-sysco-task-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sysco-task-iosTests.debug.xcconfig"; path = "Target Support Files/Pods-sysco-task-iosTests/Pods-sysco-task-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		76E00399E912CF70E1F7C98E /* Pods-sysco-task-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sysco-task-iosTests.release.xcconfig"; path = "Target Support Files/Pods-sysco-task-iosTests/Pods-sysco-task-iosTests.release.xcconfig"; sourceTree = "<group>"; };
+		9C165332B45ECE19B00B5303 /* Pods-sysco-task-ios-sysco-task-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sysco-task-ios-sysco-task-iosUITests.debug.xcconfig"; path = "Target Support Files/Pods-sysco-task-ios-sysco-task-iosUITests/Pods-sysco-task-ios-sysco-task-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A126A37C988D1244B97AB05D /* Pods_sysco_task_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sysco_task_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1896C16D68CA430BAC7915B /* Pods-sysco-task-ios-sysco-task-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sysco-task-ios-sysco-task-iosUITests.release.xcconfig"; path = "Target Support Files/Pods-sysco-task-ios-sysco-task-iosUITests/Pods-sysco-task-ios-sysco-task-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A61EDCB628748DAF008CC6DF /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		A61EDCB9287491A1008CC6DF /* PlanetHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetHomeViewController.swift; sourceTree = "<group>"; };
 		A61EDCBC2874954C008CC6DF /* TitleName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleName.swift; sourceTree = "<group>"; };
 		A61EDCC0287497BB008CC6DF /* PlanetsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsTableViewCell.swift; sourceTree = "<group>"; };
 		A61EDCC228749829008CC6DF /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
-		A61EDCC52874A42A008CC6DF /* PlanetHomeViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetHomeViewModelType.swift; sourceTree = "<group>"; };
 		A61EDCC72874A4F8008CC6DF /* PlanetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetModel.swift; sourceTree = "<group>"; };
 		A61EDCC92874A59D008CC6DF /* PlanetResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetResultModel.swift; sourceTree = "<group>"; };
 		A61EDCCC2874A69B008CC6DF /* PlanetHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetHomeViewModel.swift; sourceTree = "<group>"; };
@@ -87,9 +89,9 @@
 		A6B50DE92874F06700E35EBC /* CustomWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWrapper.swift; sourceTree = "<group>"; };
 		A6B50DEB2874F51200E35EBC /* LoadingText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingText.swift; sourceTree = "<group>"; };
 		A6B50DED2875131600E35EBC /* UIScrollView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Extension.swift"; sourceTree = "<group>"; };
-		C23741C984B923655A20B088 /* Pods_sysco_task_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sysco_task_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE005CDC0093E7332FFEED2E /* Pods-sysco-task-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sysco-task-iosTests.release.xcconfig"; path = "Target Support Files/Pods-sysco-task-iosTests/Pods-sysco-task-iosTests.release.xcconfig"; sourceTree = "<group>"; };
-		EF9FACD7B986981BB35A45CA /* Pods-sysco-task-ios-sysco-task-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sysco-task-ios-sysco-task-iosUITests.release.xcconfig"; path = "Target Support Files/Pods-sysco-task-ios-sysco-task-iosUITests/Pods-sysco-task-ios-sysco-task-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A6B50DF1287524A000E35EBC /* PlanetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetDetailViewController.swift; sourceTree = "<group>"; };
+		A6B50DF3287686E200E35EBC /* PlanetDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetDetailViewModel.swift; sourceTree = "<group>"; };
+		B23DE8DC92382646C3B29E4F /* Pods-sysco-task-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sysco-task-ios.debug.xcconfig"; path = "Target Support Files/Pods-sysco-task-ios/Pods-sysco-task-ios.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7A832C79CB1F00152905B31 /* Pods_sysco_task_ios.framework in Frameworks */,
+				B84FD9744623390C7C47EBB7 /* Pods_sysco_task_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,7 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F499A9E4A7CD58432DF32BD /* Pods_sysco_task_iosTests.framework in Frameworks */,
+				08AE33EF31C4FE13373E550A /* Pods_sysco_task_iosTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,7 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BDA1DB0E6DA5B1DC247306C /* Pods_sysco_task_ios_sysco_task_iosUITests.framework in Frameworks */,
+				A7FC4B6AC8420CC080847B78 /* Pods_sysco_task_ios_sysco_task_iosUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,12 +125,12 @@
 		3F332B0DFB9657A36D24A7E8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				098CFA91D4685874CA4BF43B /* Pods-sysco-task-ios.debug.xcconfig */,
-				50B3D627560D93E48736A2AA /* Pods-sysco-task-ios.release.xcconfig */,
-				8880CEF2707316F0F1CE3727 /* Pods-sysco-task-ios-sysco-task-iosUITests.debug.xcconfig */,
-				EF9FACD7B986981BB35A45CA /* Pods-sysco-task-ios-sysco-task-iosUITests.release.xcconfig */,
-				46D9DE7447ACB384FF234B17 /* Pods-sysco-task-iosTests.debug.xcconfig */,
-				EE005CDC0093E7332FFEED2E /* Pods-sysco-task-iosTests.release.xcconfig */,
+				B23DE8DC92382646C3B29E4F /* Pods-sysco-task-ios.debug.xcconfig */,
+				2A3CEC407F61FF49A0F31EB1 /* Pods-sysco-task-ios.release.xcconfig */,
+				9C165332B45ECE19B00B5303 /* Pods-sysco-task-ios-sysco-task-iosUITests.debug.xcconfig */,
+				A1896C16D68CA430BAC7915B /* Pods-sysco-task-ios-sysco-task-iosUITests.release.xcconfig */,
+				6CEACA89243C3D01B7DB2B8B /* Pods-sysco-task-iosTests.debug.xcconfig */,
+				76E00399E912CF70E1F7C98E /* Pods-sysco-task-iosTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -153,6 +155,7 @@
 		A61EDCB228748364008CC6DF /* Controller+Viewmodel */ = {
 			isa = PBXGroup;
 			children = (
+				A6B50DEF2875247400E35EBC /* PlanetDetail */,
 				A61EDCB828749173008CC6DF /* PlanetHome */,
 				A61EDCB428748C2C008CC6DF /* Base */,
 			);
@@ -227,7 +230,6 @@
 		A61EDCC42874A410008CC6DF /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				A61EDCC52874A42A008CC6DF /* PlanetHomeViewModelType.swift */,
 				A61EDCCC2874A69B008CC6DF /* PlanetHomeViewModel.swift */,
 			);
 			path = ViewModel;
@@ -258,7 +260,7 @@
 				A62A05CC28741AA700C3F4A6 /* sysco-task-iosUITests */,
 				A62A05AA28741AA400C3F4A6 /* Products */,
 				3F332B0DFB9657A36D24A7E8 /* Pods */,
-				F5A482C3829F33A81B79BB50 /* Frameworks */,
+				D4441326354FCF88F831D325 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -312,12 +314,29 @@
 			path = Loading;
 			sourceTree = "<group>";
 		};
-		F5A482C3829F33A81B79BB50 /* Frameworks */ = {
+		A6B50DEF2875247400E35EBC /* PlanetDetail */ = {
 			isa = PBXGroup;
 			children = (
-				87240E38B22F993DD319113F /* Pods_sysco_task_ios.framework */,
-				95E8ED40E760699AC8543382 /* Pods_sysco_task_ios_sysco_task_iosUITests.framework */,
-				C23741C984B923655A20B088 /* Pods_sysco_task_iosTests.framework */,
+				A6B50DF02875248100E35EBC /* ViewModel */,
+				A6B50DF1287524A000E35EBC /* PlanetDetailViewController.swift */,
+			);
+			path = PlanetDetail;
+			sourceTree = "<group>";
+		};
+		A6B50DF02875248100E35EBC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A6B50DF3287686E200E35EBC /* PlanetDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D4441326354FCF88F831D325 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A126A37C988D1244B97AB05D /* Pods_sysco_task_ios.framework */,
+				6309D4430F9935F99C7FB913 /* Pods_sysco_task_ios_sysco_task_iosUITests.framework */,
+				1809F009C24BBFBD367C16E6 /* Pods_sysco_task_iosTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -329,11 +348,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A62A05D328741AA700C3F4A6 /* Build configuration list for PBXNativeTarget "sysco-task-ios" */;
 			buildPhases = (
-				5FEAD57A4C2204475AE282FB /* [CP] Check Pods Manifest.lock */,
+				AF1D092926992195FF317B68 /* [CP] Check Pods Manifest.lock */,
 				A62A05A528741AA400C3F4A6 /* Sources */,
 				A62A05A628741AA400C3F4A6 /* Frameworks */,
 				A62A05A728741AA400C3F4A6 /* Resources */,
-				40455EF54919790E4DE96855 /* [CP] Embed Pods Frameworks */,
+				B54E5BB2640406B441E08525 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -348,7 +367,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A62A05D628741AA700C3F4A6 /* Build configuration list for PBXNativeTarget "sysco-task-iosTests" */;
 			buildPhases = (
-				00A6A313D5186E8495E9086F /* [CP] Check Pods Manifest.lock */,
+				A60121E732CF440B65D0B399 /* [CP] Check Pods Manifest.lock */,
 				A62A05BB28741AA700C3F4A6 /* Sources */,
 				A62A05BC28741AA700C3F4A6 /* Frameworks */,
 				A62A05BD28741AA700C3F4A6 /* Resources */,
@@ -367,11 +386,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A62A05D928741AA700C3F4A6 /* Build configuration list for PBXNativeTarget "sysco-task-iosUITests" */;
 			buildPhases = (
-				4AC65ED5E9B8886ABCF2B025 /* [CP] Check Pods Manifest.lock */,
+				9EB573C9D75A385C398C8B8B /* [CP] Check Pods Manifest.lock */,
 				A62A05C528741AA700C3F4A6 /* Sources */,
 				A62A05C628741AA700C3F4A6 /* Frameworks */,
 				A62A05C728741AA700C3F4A6 /* Resources */,
-				4200539EBBDEBEDD5D761E64 /* [CP] Embed Pods Frameworks */,
+				146AA8CA83FA12C23348E3DC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -453,46 +472,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		00A6A313D5186E8495E9086F /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-sysco-task-iosTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		40455EF54919790E4DE96855 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-sysco-task-ios/Pods-sysco-task-ios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-sysco-task-ios/Pods-sysco-task-ios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sysco-task-ios/Pods-sysco-task-ios-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4200539EBBDEBEDD5D761E64 /* [CP] Embed Pods Frameworks */ = {
+		146AA8CA83FA12C23348E3DC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -509,7 +489,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sysco-task-ios-sysco-task-iosUITests/Pods-sysco-task-ios-sysco-task-iosUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4AC65ED5E9B8886ABCF2B025 /* [CP] Check Pods Manifest.lock */ = {
+		9EB573C9D75A385C398C8B8B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -531,7 +511,29 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5FEAD57A4C2204475AE282FB /* [CP] Check Pods Manifest.lock */ = {
+		A60121E732CF440B65D0B399 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sysco-task-iosTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF1D092926992195FF317B68 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -553,6 +555,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B54E5BB2640406B441E08525 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sysco-task-ios/Pods-sysco-task-ios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sysco-task-ios/Pods-sysco-task-ios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sysco-task-ios/Pods-sysco-task-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -565,7 +584,6 @@
 				A61EDCB728748DAF008CC6DF /* UIView+Extension.swift in Sources */,
 				A61EDCBA287491A1008CC6DF /* PlanetHomeViewController.swift in Sources */,
 				A62A05B128741AA400C3F4A6 /* BaseViewController.swift in Sources */,
-				A61EDCC62874A42A008CC6DF /* PlanetHomeViewModelType.swift in Sources */,
 				A61EDCBD2874954C008CC6DF /* TitleName.swift in Sources */,
 				A61EDCC82874A4F8008CC6DF /* PlanetModel.swift in Sources */,
 				A61EDCC328749829008CC6DF /* BaseTableViewCell.swift in Sources */,
@@ -574,10 +592,12 @@
 				A6B50DEA2874F06700E35EBC /* CustomWrapper.swift in Sources */,
 				A62A05AD28741AA400C3F4A6 /* AppDelegate.swift in Sources */,
 				A61EDCD02874B0D1008CC6DF /* APIBaseRouter.swift in Sources */,
+				A6B50DF4287686E200E35EBC /* PlanetDetailViewModel.swift in Sources */,
 				A6B50DEE2875131600E35EBC /* UIScrollView+Extension.swift in Sources */,
 				A61EDCC1287497BB008CC6DF /* PlanetsTableViewCell.swift in Sources */,
 				A61EDCD62874CFDD008CC6DF /* PlanetHome+APIRouter.swift in Sources */,
 				A6B50DE52874ED7800E35EBC /* MainLoading.swift in Sources */,
+				A6B50DF2287524A000E35EBC /* PlanetDetailViewController.swift in Sources */,
 				A6B50DE82874EDFC00E35EBC /* BaseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -744,7 +764,7 @@
 		};
 		A62A05D428741AA700C3F4A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 098CFA91D4685874CA4BF43B /* Pods-sysco-task-ios.debug.xcconfig */;
+			baseConfigurationReference = B23DE8DC92382646C3B29E4F /* Pods-sysco-task-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -759,6 +779,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -774,7 +795,7 @@
 		};
 		A62A05D528741AA700C3F4A6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 50B3D627560D93E48736A2AA /* Pods-sysco-task-ios.release.xcconfig */;
+			baseConfigurationReference = 2A3CEC407F61FF49A0F31EB1 /* Pods-sysco-task-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -789,6 +810,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -804,7 +826,7 @@
 		};
 		A62A05D728741AA700C3F4A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46D9DE7447ACB384FF234B17 /* Pods-sysco-task-iosTests.debug.xcconfig */;
+			baseConfigurationReference = 6CEACA89243C3D01B7DB2B8B /* Pods-sysco-task-iosTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -825,7 +847,7 @@
 		};
 		A62A05D828741AA700C3F4A6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EE005CDC0093E7332FFEED2E /* Pods-sysco-task-iosTests.release.xcconfig */;
+			baseConfigurationReference = 76E00399E912CF70E1F7C98E /* Pods-sysco-task-iosTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -846,7 +868,7 @@
 		};
 		A62A05DA28741AA700C3F4A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8880CEF2707316F0F1CE3727 /* Pods-sysco-task-ios-sysco-task-iosUITests.debug.xcconfig */;
+			baseConfigurationReference = 9C165332B45ECE19B00B5303 /* Pods-sysco-task-ios-sysco-task-iosUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -865,7 +887,7 @@
 		};
 		A62A05DB28741AA700C3F4A6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EF9FACD7B986981BB35A45CA /* Pods-sysco-task-ios-sysco-task-iosUITests.release.xcconfig */;
+			baseConfigurationReference = A1896C16D68CA430BAC7915B /* Pods-sysco-task-ios-sysco-task-iosUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

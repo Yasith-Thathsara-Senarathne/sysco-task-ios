@@ -15,9 +15,9 @@ class PlanetHomeViewController: BaseViewController {
     // varibales
     private let cellId: String = "planets_cell_id"
     
-    private var viewModel: PlanetHomeViewModelType!
+    private let viewModel = PlanetHomeViewModel()
     
-    private var disposeBag: DisposeBag!
+    private let disposeBag = DisposeBag()
     
     private var tableView: UITableView!
     
@@ -38,6 +38,8 @@ class PlanetHomeViewController: BaseViewController {
         }()
     
     override func config() {
+        view.backgroundColor = UIColor.white
+        
         // make large navigation title
         navigationController?.navigationBar.prefersLargeTitles = true
         
@@ -76,12 +78,6 @@ class PlanetHomeViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // init view model
-        viewModel = PlanetHomeViewModel()
-        
-        // init disposebag
-        disposeBag = DisposeBag()
-        
         // bind view model to controller
         bindViewModel()
         
@@ -91,14 +87,22 @@ class PlanetHomeViewController: BaseViewController {
     
     func bindViewModel() {
         
+        // bind data to tableview
         viewModel.planetListModel.bind(to: tableView.rx.items(cellIdentifier: cellId, cellType: PlanetsTableViewCell.self)) {_, data, cell in
-            cell.updateUIWithData(data: data)
+            cell.updateUIWithData(data: data, with: "https://picsum.photos/200")
         }
         .disposed(by: self.disposeBag)
         
+        tableView.rx.modelSelected(PlanetModel.self)
+            .subscribe(onNext: { [unowned self] data in
+                self.handlePlanetOnTapped(data: data)
+                
+            }).disposed(by: self.disposeBag)
+        
+        // tableview scroll to bottom
         tableView.rx
             .didScroll
-            .map{ [unowned self]_  in self.tableView.isNearBottomEdge()}
+            .map{ [unowned self] _ in self.tableView.isNearBottomEdge()}
             .skip(1)
             .distinctUntilChanged()
             .filter{$0}
@@ -108,17 +112,26 @@ class PlanetHomeViewController: BaseViewController {
                 self.viewModel.fetchMorePlanets()
             }).disposed(by: self.disposeBag)
         
-        
+        // bind data to mainloading
         viewModel.mainLoading
             .map{($0, LoadingText.loadingPlanets)}
             .bind(to: mainLoading.rx.activeLoading)
             .disposed(by: self.disposeBag)
         
+        // bind date to backgroundloading
         viewModel.backgroundLoading.subscribe { [weak self] in
             guard let `self` = self else { return }
             
             self.tableView.tableFooterView = $0.element ?? false ? self.backgroundSpinner : UIView(frame: .zero)
         }.disposed(by: self.disposeBag)
         
+    }
+    
+    private func handlePlanetOnTapped(data: PlanetModel) {
+        let planetDetailVC = PlanetDetailViewController()
+        
+        planetDetailVC.viewModel.planetModel = data
+        
+        self.navigationController?.pushViewController(planetDetailVC, animated: true)
     }
 }

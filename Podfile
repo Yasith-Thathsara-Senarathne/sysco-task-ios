@@ -8,9 +8,9 @@ target 'sysco-task-ios' do
   # Pods for sysco-task-ios
   pod 'RxSwift', '6.2.0'
   pod 'RxCocoa', '6.2.0'
-  pod 'RxDataSources'
-  pod 'NSObject+Rx'
   pod 'Moya/RxSwift'
+  pod 'Alamofire', '~> 5.4'
+  pod 'AlamofireImage', '~> 4.1'
   
 
   target 'sysco-task-iosTests' do

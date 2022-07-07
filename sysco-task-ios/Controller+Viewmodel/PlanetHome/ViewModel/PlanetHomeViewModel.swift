@@ -10,7 +10,7 @@ import RxSwift
 import RxCocoa
 import Moya
 
-struct PlanetHomeViewModel: PlanetHomeViewModelType {
+struct PlanetHomeViewModel {
     // API provider
     private let apiProvider = MoyaProvider<APIRoute>()
     
@@ -76,6 +76,5 @@ struct PlanetHomeViewModel: PlanetHomeViewModelType {
                 print(error)
             })
     }
-    
     
 }
